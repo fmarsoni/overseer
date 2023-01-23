@@ -59,7 +59,7 @@ func (mp *master) run() error {
 	}
 	if mp.Config.Fetcher != nil {
 		mp.printCheckUpdate = true
-		mp.fetch()
+		// mp.fetch()
 		go mp.fetchLoop()
 	}
 	return mp.forkLoop()
